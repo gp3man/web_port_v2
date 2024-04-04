@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 
 export function NavbarTop() {
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="relative w-full flex items-center justify-center bg-black">
       <Navbar className="top-2" />
       <p className="text-black dark:text-white">
         The Navbar will show on top of the page

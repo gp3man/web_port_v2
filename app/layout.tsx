@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Gregs Web Portal",
   description: "Web Portfolio",
 };
-
+export const revalidate = 1800;
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NavbarTop />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <NavbarTop/>
+        {children}
+        </body>
     </html>
   );
 }
