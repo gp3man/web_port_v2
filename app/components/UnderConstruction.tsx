@@ -23,7 +23,7 @@ export const UConstruct = ({ className }: { className?: string }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease:"circInOut", duration: 3 }}
           >
-            Coming Soon{" "}
+            In Development{" "}
           </motion.span>
         </motion.p>
       </LampContainer>
