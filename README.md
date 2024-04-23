@@ -8,7 +8,7 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
+<!-- #todo revamp whole readme -->
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -34,7 +34,7 @@
     <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">TonyThyme</h3>
+<h3 align="center">Gregs Cache</h3>
 
   <p align="center">
     A recipe blog
