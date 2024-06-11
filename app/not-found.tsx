@@ -27,7 +27,6 @@ export default function NotFound() {
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
-  // const data = await getSiteData(domain)
   return (
     <motion.section
       style={{
