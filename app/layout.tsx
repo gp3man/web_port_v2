@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./components/navigation/Navbar";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="text-text-default bg-background-default dark">
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-BN804S2RP3" />
     </html>

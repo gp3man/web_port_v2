@@ -1,8 +1,10 @@
-import { Hero } from "./components/hero";
+import { Hero } from "./components/Hero";
+import { ModeToggle } from "./components/ThemeToggle";
 export default function Home() {
   return (
-    <main className="flex m-0 min-h-screen flex-col items-center justify-between pt-40">
+    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <Hero />
+      <ModeToggle  />
     </main>
   );
 }

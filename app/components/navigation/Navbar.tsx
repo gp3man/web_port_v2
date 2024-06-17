@@ -1,5 +1,5 @@
 "use client";
-import { FloatingNav } from "../ui/floating-navbar";
+import { FloatingNav } from "../../components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 export function Navbar({ className }: { className?: string }) {
   const navItems = [
@@ -16,9 +16,7 @@ export function Navbar({ className }: { className?: string }) {
     {
       name: "Contact",
       link: "/contact",
-      icon: (
-        <IconMessage className="h-4 w-4 text-text-default" />
-      ),
+      icon: <IconMessage className="h-4 w-4 text-text-default" />,
     },
   ];
   return (
