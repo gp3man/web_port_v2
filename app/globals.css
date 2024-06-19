@@ -57,3 +57,26 @@
       @apply bg-background text-foreground;
     }
   }
+  @layer components{
+    #sentry-feedback {
+      --background: var(--secondary);
+      --background-hover: var(--background-hover);
+      --foreground: var(--foreground);
+      --error: var(--destructive);
+      --submit-background: hsl(var(--secondary));
+      --submit-background-hover: hsl(var(--secondary-foreground));
+    }
+    .crown{
+      border: 2px solid rgba(255, 217, 0, 0.836); /* the 'strokes' of the arc */
+      display: inline-block;
+      position: absolute;
+      min-width: 4em; /* the width of the innermost element */
+      min-height: 4em; /* the height of the innermost element */
+      padding: 0.5em; /* the spacing between each arc */
+      border-radius: 50%; /* for making the elements 'round' */
+      border-top-color: transparent; /* hiding the top border */
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      rotate: 100deg;
+    }
+  }

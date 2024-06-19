@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const chakra = Chakra_Petch({weight:["300","700"], subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Gregs Web Portal",
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="text-text-default bg-background-default dark">
-      <body className={inter.className}>
+    <html suppressHydrationWarning lang="en" className="dark">
+      <body className={chakra.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
