@@ -11,7 +11,7 @@ export const Hero = ({ className }: { className?: string }) => {
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="hsl(var(--secondary))"
         />
-        <TextGenerateEffect className="w-1/2" words="Greetings Web Traveler! Welcome to Greg's Portal, where you can find all shards of his services." className="text-sm" />
+        <TextGenerateEffect className="w-1/2" words="Greetings Web Traveler! Welcome to Greg's Portal, where you can find all shards of his services." />
         <Crown size={200} localSrc="/assets/Mymeme7.png" />
       </div>
     </div>
