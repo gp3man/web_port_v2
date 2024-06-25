@@ -79,4 +79,7 @@
       border-right-color: transparent;
       rotate: 100deg;
     }
+    .linkSidebar{
+      background: hsl(var(--accent));
+    }
   }

@@ -1,4 +1,5 @@
 "client";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
@@ -12,7 +13,7 @@ const Crown = ({
   size: number;
 }) => {
   return (
-    <div className="realative ">
+    <div className= {cn("ralative ", className)}>
       <div className="relative ">
         
         <div className="crown ">

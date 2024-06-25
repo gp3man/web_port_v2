@@ -3,8 +3,9 @@ import { Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "./provider";
+import LinkSideBar from "./components/LinkSideBar";
 
-const chakra = Chakra_Petch({weight:["300","700"], subsets: ["latin"]});
+const chakra = Chakra_Petch({ weight: ["300", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gregs Web Portal",
@@ -25,7 +26,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+            <LinkSideBar />
+            {children}
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-BN804S2RP3" />

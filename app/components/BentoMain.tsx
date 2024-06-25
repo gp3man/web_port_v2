@@ -7,14 +7,14 @@ import { Skeleton } from './ui/skeleton';
 const BentoMain = () => {
   const items = [
     {
-      title: "The Dawn of Innovation",
+      title: "Tech Stack",
       description: "Explore the birth of groundbreaking ideas and inventions.",
       header: <Skeleton />,
       icon: <PaperPlaneIcon className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
+      title: "Trainings",
+      description: "A deep dive into the education that got me here.",
       header: <Skeleton />,
       icon: <PaperPlaneIcon className="h-4 w-4 text-neutral-500" />,
     },
@@ -25,7 +25,7 @@ const BentoMain = () => {
       icon: <PaperPlaneIcon className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Power of Communication",
+      title: "Hobbies",
       description:
         "Understand the impact of effective communication in our lives.",
       header: <Skeleton />,
@@ -52,7 +52,7 @@ const BentoMain = () => {
   ]
 
   return (
-    <div>BentoMain
+    <div className='mainGrid'>
       <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
