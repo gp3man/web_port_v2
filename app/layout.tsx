@@ -4,7 +4,6 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "./provider";
 import LinkSideBar from "./components/LinkSideBar";
-import { FloatingNav } from "./components/ui/floating-navbar";
 import TopNav from "./components/TopNav";
 
 const chakra = Chakra_Petch({ weight: ["300", "700"], subsets: ["latin"] });

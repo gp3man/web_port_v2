@@ -4,14 +4,15 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Crown from "./ui/profile-crown";
 import { FlipWords } from "./ui/flip-words";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export const Hero = ({ className }: { className?: string }) => {
   return (
     <div className="pb-20 pt-14 top-0 h-[100dvh]">
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-[100dvh]"
-          fill="hsl(var(--secondary))"
-        />
+      <Spotlight
+        className="-top-40 -left-10 md:-left-32 md:-top-20 h-[100dvh]"
+        fill="hsl(var(--secondary))"
+      />
       <div>
         <div className="flex ">
           <div className="w-2/3">
@@ -29,8 +30,13 @@ export const Hero = ({ className }: { className?: string }) => {
         </div>
       </div>
       <div className="flex items-center space-x-5 relative -bottom-12">
-        <Button variant={"secondary"} size={"lg"}>See More</Button>
-        <Button variant={"outline"} size={"lg"}>Contact</Button>
+        <Button variant={"secondary"} size={"lg"}>
+          {" "}
+          <Link href={"#main"} replace={true}>Learn More </Link>{" "}
+        </Button>
+        <Button variant={"outline"} size={"lg"}>
+          <Link href={"#contact"}>Contact </Link>
+        </Button>
       </div>
     </div>
   );
